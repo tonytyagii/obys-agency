@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Plain Light";
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes anime{
+    0%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+         color: #fff;
+         opacity: 1;
+
+    }
+    47%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+         color: #fff;
+         opacity: 0;
+    }
+    50%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 1px #fff;
+         color: #fff;
+         opacity: 1;
+    }
+
+    100%{
+         font-family: "silk serif";
+        -webkit-text-stroke: 1px #fff;
+         color: transparent;
+         opacity: 0;
+    }
+}
+
+#main{
+    position: relative;
+    background-color: #030303;
+}
+
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: #0b0b0b96;
+    padding: 25vh 5vw;
+}  
+
+.line{
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#line-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    margin-right: 4vw;
+}
+
+#line-text h5, #line-text h6{
+    font-size: 3vw;
+    font-weight: 400;
+    font-family: 'silk serif';
+}
+
+#line-text h5{
+    width: 5vw;
+    text-align: end;
+}
+
+.line h1 {
+    font-size: 7vw;
+    letter-spacing: .2vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: "plain light";
+}
+
+.line h2 {
+    padding-left: 2vw;
+    font-size: 5.4vw;
+    font-weight: 500;
+    padding-right: 2vw;
+    opacity: 0;
+    animation: anime 2s infinite;
+    animation-delay: .3s;
+    font-family: "plain light";
+}
+ 
+/* .line h2{
+    padding-left: 2vw;
+    font-size: 5vw;
+    padding-right: 2vw;
+    opacity: 0;
+    animation: 2s infinite;
+} */
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #25242473;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #c68f8f;
+}
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: #d66b6b;
+}
+
+#page4
+{
+    height: 100vh;
+    width: 100%;
+    background-color: #332727;
+}

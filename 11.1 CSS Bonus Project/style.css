@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+
+}
+
+#page1{
+    height: 100%;
+    width: 100%;
+}
+
+#nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+    margin-bottom: 5vh;
+}
+
+#nav #left{
+    display: flex;
+    gap: 2vw;
+    width: 32%;
+}
+
+#nav #logo{
+    font-size: 1.5vw;
+    width: 30%;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-weight: 300;
+
+}
+
+#nav #right{
+    height: 100%;
+    width: 12%;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+
+}
+
+#nav #right #login{
+   border: none;
+   background-color: white;
+}
+
+#nav #right p{
+    font-size: 2vw;
+    padding-bottom: 1.5vh;
+    font-weight: 500;
+}
+
+#nav #right #signup{
+    padding: .8vh 1vw;
+    background-color: black;
+    color: white;
+    border-radius: 1.5vw;
+}
+
+#content{
+    height: calc(100% - 10vh);
+    width: 100%;
+}
+
+#top{
+    height: 40%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#top h4{
+    font-size: 1.5vw;
+    font-weight: 400;
+    padding: .3vw 1vw;
+    border-radius: 3vw;
+    width: fit-content;
+    background-color: rgba(255, 255, 0, 0.327);
+}
+
+#top h1{
+    font-size: 4.5VW;
+    line-height: 6vh;
+    font-weight: 500;
+    width: 60VW;
+    margin: 4vh 0;
+}
+
+#top #para1{
+    font-size: 1.1vw;
+    width: 40vw;
+    margin-bottom: 4vh;
+}
+
+#top #btn{
+    padding: .8vw 1vw;
+    color: white;
+    font-size: 1vw;
+    border-radius: 5vw;
+    background-color: black;
+}
+
+#cards{
+    height: 54.5%;
+    width: 100%;
+    padding: 2vw 0 0 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+   
+  
+}
+
+#cards::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    height: 80%;
+    width: 20vw;
+    display: inline-block;
+    margin-top: 9vh;
+    border-radius: 30px;
+    position: relative;
+    margin-right: 4%;
+    /* animation: scroll 2s linear infinite;  */
+}
+
+#cards .card:last-child{
+    margin-right: 0;
+}
+
+.card img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     border-radius: 30px;
+
+}
+
+.card-text{
+  height: 40%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
+}
+
+@keyframes scroll {
+    from{
+      transform: translateX(0);
+    }
+
+    to{
+      transform: translateX(calc(-100% - 6%));
+
+      
+    }
+}
+
+
+#page2{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 70px 50px 70px 90px;
+    padding-top: 100px;
+}
+
+#page2 h1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.5vw;
+    margin-bottom: 50px;
+
+}
+
+.box{
+    height: 200px;
+    width: 280px;
+    border-radius: 20px;
+    background-color: yellowgreen;
+     overflow: hidden;
+     display: inline-block;
+     margin: 0 2vh 2vh 0;
+     position: relative;
+}
+
+.box img{
+    height: 100%;
+    width: 100%;
+
+}
+
+.box-bottom{
+    height: 40%;
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    bottom: -40%;
+    transition: all ease .3s;
+    padding: 1.5vw;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box:hover .box-bottom{
+    bottom: 0;
+    background: linear-gradient(to right bottom, transparent, rgba(0, 0, 0, 0.483));
+}
+
+.box-bottom h5{
+   font-size: 20px;
+   font-weight: 500;
+   letter-spacing: .1vw;
+}
+
+.box-bottom i {
+  background-color: white;
+  color: black;
+  padding: 9px 10px;
+  border-radius: 50%;
+}
+
+.box:hover{
+    box-shadow: 6px 3px 5px black;
+}
+
+

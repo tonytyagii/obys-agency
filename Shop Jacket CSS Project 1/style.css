@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 10vh;
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+}
+
+.ri-briefcase-line{
+     background-color: black;
+     color: white;
+     padding: 10px;
+     border-radius: 50%;
+}
+
+#h1{
+   width: 800px;
+}
+ h1{
+    font-size: 4.8vw;
+    margin: 6rem;
+    font-weight: 500;
+ }
+
+ #bottom{
+    display: flex;
+    margin: 6rem;
+    justify-content: space-between;
+ }
+
+ p{
+    font-size: 1.4vw;
+    width: 420px;
+ }
+
+
+ a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+ }
+
+
+#right{
+   width: 200px;
+}
+
+ .elem{
+   padding: 18px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-top: 3px solid black;
+ }
+
+#right i{
+   font-size: 25px;
+   font-weight: 500;
+   opacity: 0;
+ }
+
+ .elem:hover i {
+   opacity: 1;
+ }
+
+ #img{
+   margin-top: -5rem;
+ }
+
+ img{
+   height: 30vh;
+   width: 100%;
+   object-fit: cover;
+ }
+
+ @media (max-width: 600px) {
+   nav{
+    height: 100px;
+    padding: 0 2rem;
+    gap: 20px;
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: center; */
+}
+
+.ri-briefcase-line{
+     background-color: black;
+     color: white;
+     padding: 8px;
+     border-radius: 50%;
+}
+
+#h1{
+   width: 100%;
+   margin-top: -5rem;
+}
+ h1{
+    font-size: 9.5vw;
+    font-weight: 500;
+ }
+
+ #bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -50px;
+ }
+
+ p{
+    font-size: 2.8vw;
+    width: 366px;
+    margin-bottom: 30px;
+ }
+
+
+ a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+ }
+
+
+#right{
+   width: 100%;
+}
+
+ .elem{
+   padding: 10px 0;
+   border-top: 2px solid black;
+ }
+
+#right i{
+   font-size: 15px;
+   font-weight: 500;
+   opacity: 1;
+   
+ }
+
+ .elem:hover i {
+   opacity: 1;
+ }
+
+ #img{
+   margin-top: -5rem;
+ }
+
+ img{
+   height: 30vh;
+   width: 100%;
+   object-fit: cover;
+ }
+ }
